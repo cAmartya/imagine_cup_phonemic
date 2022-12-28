@@ -1,168 +1,280 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Phonemic</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
+  <head>
+    <title>Phonemic</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+      }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/static/picture_1.jpg");
-  min-height: 75%;
-}
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/static/picture_1.jpg");
+        min-height: 75%;
+      }
 
-.menu {
-  display: none;
-}
-</style>
-</head>
-<body>
-
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">INSTRUCTIONS</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">MODEL UPDATE</a>
-    </div>
-  </div>
-</div>
-
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Microsoft Imagine Cup 2023</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">Phonemic</span>
-  </div>
-  
-</header>
-
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
-
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE DEVICE</span></h5>
-    <p>In todays fast paced world,communication has become one of the keys to success </p>
-    <p>Our device will help to detect muscle movements during silent speech using emg and piezo sensors.Our accurate position detector will assist you with the necessary amount of </p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Speech is a gift that a lot of us just take for granted. Being able to talk adds a certain edge to our life that we don't always think about. But it is very horrifying to think how life would be without it."</i></p>
-      
-    </div>
-    <!-- <img src=# style="width:100%;max-width:1000px" class="w3-margin-top"> -->
-    
-  </div>
-</div>
-
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INSTRUCTIONS</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Position Detector</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Model Update</div>
-      </a>
+      .menu {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">INSTRUCTIONS</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">MODEL UPDATE</a>
+        </div>
+      </div>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Make sure your camera is open</h5>
-      <p class="w3-text-grey">If there is a problem then check your permissions,it might be possible that you might have not allowed the required permissions.</p><br>
-    
-      <h5>Look At the Detailed Markings</h5>
-      <p class="w3-text-grey">Make sure you make your whole face is visible in the frame otherwise it might be possible that detection model might not work.</p><br>
-    
-      <h5>Attach the sensors on the marked positions</h5>
-      <p class="w3-text-grey">Since these sensors cover a large area so you might not need to be absolutely exact.</p><br>
-    
-      <h5>Its Done !!!</h5>
-      <p class="w3-text-grey">You don't have to do anything now the device will perform it's work.</p>
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div
+        class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small"
+      >
+        <span class="w3-tag">Microsoft Imagine Cup 2023</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size: 90px">Phonemic</span>
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-64">
+            <span class="w3-tag w3-wide">ABOUT THE DEVICE</span>
+          </h5>
+          <p>
+            In todays fast paced world,communication has become one of the keys
+            to success
+          </p>
+          <p>
+            Our device will help to detect muscle movements during silent speech
+            using emg and piezo sensors.Our accurate position detector will
+            assist you with the necessary amount of
+          </p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p>
+              <i
+                >"Speech is a gift that a lot of us just take for granted. Being
+                able to talk adds a certain edge to our life that we don't
+                always think about. But it is very horrifying to think how life
+                would be without it."</i
+              >
+            </p>
+          </div>
+          <!-- <img src=# style="width:100%;max-width:1000px" class="w3-margin-top"> -->
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">INSTRUCTIONS</span>
+          </h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Eat');"
+              id="myLink"
+            >
+              <div class="w3-col s6 tablink">Position Detector</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="w3-col s6 tablink">Model Update</div>
+            </a>
+          </div>
+
+          <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Make sure your camera is open</h5>
+            <p class="w3-text-grey">
+              If there is a problem then check your permissions,it might be
+              possible that you might have not allowed the required permissions.
+            </p>
+            <br />
+
+            <h5>Look At the Detailed Markings</h5>
+            <p class="w3-text-grey">
+              Make sure you make your whole face is visible in the frame
+              otherwise it might be possible that detection model might not
+              work.
+            </p>
+            <br />
+
+            <h5>Attach the sensors on the marked positions</h5>
+            <p class="w3-text-grey">
+              Since these sensors cover a large area so you might not need to be
+              absolutely exact.
+            </p>
+            <br />
+
+            <h5>Its Done !!!</h5>
+            <p class="w3-text-grey">
+              You don't have to do anything now the device will perform it's
+              work.
+            </p>
+          </div>
+
+          <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Step 1</h5>
+            <p class="w3-text-grey">Inference 1</p>
+            <br />
+
+            <h5>Step 2</h5>
+            <p class="w3-text-grey">Inference 2</p>
+            <br />
+
+            <h5>Step 3</h5>
+            <p class="w3-text-grey">Inference 3</p>
+            <br />
+
+            <h5>Step 4</h5>
+            <p class="w3-text-grey">Inference 4</p>
+            <br />
+
+            <h5>Step 5</h5>
+            <p class="w3-text-grey">Inference 5</p>
+          </div>
+          <br />
+          <center>
+            <h4>Position Detector</h4>
+            <br />
+            <video autoplay muted id="video"></video>
+            <img id="resultimg" />
+            <!-- <img src="{{ url_for('analyze') }}"  height="50%"/> -->
+          </center>
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom: 32px">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">WHO ARE WE</span>
+          </h5>
+          <p>
+            We are all batchmates of Computer Science and Engineering at
+            Jadavpur University. The four of us met in online classes in 2020.
+            We connected having mutual interests. Since then we participated in
+            various hackathon and data science competitions, where we usually
+            performed well. While brainstorming for the Imagine Cup, we were
+            thinking about aiding people with disabilities and how we could use
+            technology to improve lives. Providing speech to those who have
+            trouble with it was an abstract concept at first which inspired us.
+            Exploring further on this idea we got more and more excited to
+            develop a first of its kind solution.
+          </p>
+          <img
+            src="{{ url_for('static', filename='picture_2.jpg') }}"
+            class="w3-image"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <!-- End page content -->
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Step 1</h5>
-      <p class="w3-text-grey">Inference 1</p><br>
-    
-      <h5>Step 2</h5>
-      <p class="w3-text-grey">Inference 2</p><br>
-    
-      <h5>Step 3</h5>
-      <p class="w3-text-grey">Inference 3</p><br>
-    
-      <h5>Step 4</h5>
-      <p class="w3-text-grey">Inference 4</p><br>
-    
-      <h5>Step 5</h5>
-      <p class="w3-text-grey">Inference 5</p>
-    </div>  
-    <br>
-    <center>
-      <h4>Position Detector</h4>
-      <br>
-      <!-- <img src="{{ url_for('analyze') }}"  height="50%"/> -->
-    </center>
-    
-  </div>
-</div>
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>Powered by Team Fine_Tuners</p>
+    </footer>
 
-<!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHO ARE WE</span></h5>
-    <p>We are all batchmates of Computer Science and Engineering at Jadavpur University. The four of us met in online classes in 2020. We connected having mutual interests. Since then we participated in various hackathon and data science competitions, where we usually performed well. While brainstorming for the Imagine Cup, we were thinking about aiding people with disabilities and how we could use technology to improve lives. Providing speech to those who have trouble with it was an abstract concept at first which inspired us. Exploring further on this idea we got more and more excited to develop a first of its kind solution. 
-    </p>
-    <img src="{{ url_for('static', filename='picture_2.jpg') }}" class="w3-image" style="width:100%">
-  </div>
-</div>
+    <!-- Added lates -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"
+      integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const video = document.getElementById("video");
+      const canvas = document.createElement("canvas");
+      canvas.height = 480;
+      canvas.width = 640;
+      const resultimg = document.getElementById("resultimg");
 
-<!-- End page content -->
-</div>
+      const constraints = {
+        audio: false,
+        video: {
+          width: 640,
+          height: 480,
+        },
+      };
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by Team Fine_Tuners</p>
-</footer>
+      // Access webcam
+      async function init() {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia(constraints);
+          window.stream = stream;
+          video.srcObject = stream;
+        } catch (e) {
+          console.log(e);
+        }
+      }
 
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
+      // Load init
+      init();
 
-</body>
+      // Draw image
+      var context = canvas.getContext("2d");
+      setInterval(function () {
+        context.drawImage(video, 0, 0, 640, 480);
+        var jpegUrl = canvas.toDataURL("image/jpeg", 0.5);
+        // split at ,
+        var base64 = jpegUrl.split(",")[1];
+
+        axios.post("/detect", base64).then((res) => {
+          console.log(res.data);
+          resultimg.src = "data:image/jpeg;base64," + res.data;
+        });
+      }, 100); // Control FPS .. 100 ms so 10 FPS
+    </script>
+    <!-- ended -->
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " w3-dark-grey",
+            ""
+          );
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+      document.getElementById("myLink").click();
+    </script>
+  </body>
 </html>

@@ -44,10 +44,6 @@ def analyze_frame(base64_jpeg):
 def index():
     return render_template('index.html')
 
-@app.route('/analyze')
-def analyze():
-    return render_template('analyze.html')
-
 @app.route('/detect', methods=['POST'])
 def detect():
     img = analyze_frame(request.get_data())

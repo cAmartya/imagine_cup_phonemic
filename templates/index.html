@@ -28,9 +28,21 @@
       }
 
       .videofeed{
-        display: flex;
-        flex-direction: row;
-        column-gap: 20px;
+        width: 640px;
+        height: 480px;
+        position: relative;
+      }
+
+      .box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .overlay {
+        z-index: 9;
       }
     </style>
   </head>
@@ -170,12 +182,8 @@
             <h4>Position Detector</h4>
             <br />
             <div class="videofeed">
-              <div>
-                <p>Live Feed</p>
-                <video autoplay muted id="video"></video>
-              </div>
-              <div>
-                <p>Sensor's Position</p>
+              <video class="box" autoplay muted id="video"></video>
+              <div class="box overlay">
                 <img id="resultimg" />
               </div>
             </div>

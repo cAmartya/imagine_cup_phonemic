@@ -36,6 +36,7 @@ def analyze_frame(base64_jpeg):
                     cv2.circle(frame,(x,y),4,(100,100,0),-1)
                     cv2.putText(frame,str(i),(x,y),1,0.5,(0,0,0))
         
+    
     ret,buffer=cv2.imencode('.jpg',frame)
     base64_encoded = base64.b64encode(buffer)
     return base64_encoded

@@ -26,6 +26,12 @@
       .menu {
         display: none;
       }
+
+      .videofeed{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+      }
     </style>
   </head>
   <body>
@@ -161,13 +167,18 @@
             <p class="w3-text-grey">Inference 5</p>
           </div>
           <br />
-          <center>
             <h4>Position Detector</h4>
             <br />
-            <video autoplay muted id="video"></video>
-            <img id="resultimg" />
-            <!-- <img src="{{ url_for('analyze') }}"  height="50%"/> -->
-          </center>
+            <div class="videofeed">
+              <div>
+                <p>Live Feed</p>
+                <video autoplay muted id="video"></video>
+              </div>
+              <div>
+                <p>Sensor's Position</p>
+                <img id="resultimg" />
+              </div>
+            </div>
         </div>
       </div>
 

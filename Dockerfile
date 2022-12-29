@@ -12,7 +12,7 @@ RUN pip3 install opencv-python==4.3.0.38
 RUN pip install -r requirements.txt
 
 COPY . .
-EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT ["python"]
 
 CMD ["app.py"]
